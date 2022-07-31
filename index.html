@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Pro</title>
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <img class="w-100" src="images/mac.png" alt="">
+            </div>
+            <div class="col">
+                <h2>Customize your Blue 24-inch iMac with Apple Mi chip.</h2>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7core GPU, and 16 core
+                    Neural Engine 8GB
+                    unified memory 256GB SSD storage Tow Thunderbolt / USB 4 port Magic Mouse Magic keyborad -US
+                    English.
+                </p>
+                <h4 class="mt-5">Memory</h4>
+                <button onclick="updateCost('memory-cost', 0)" type="button" class="btn btn-outline-secondary">8GB
+                    unified memory</button>
+                <button onclick="updateCost('memory-cost', 180)" type="button" class="btn btn-outline-secondary">16GB
+                    unified memory</button>
+                <h4 class="mt-5">storage</h4>
+                <button onclick="updateCost('storage-cost', 0)" type="button" class="btn btn-outline-secondary">256GB
+                    SSD storage</button>
+                <button onclick="updateCost('storage-cost', 100)" type="button" class="btn btn-outline-secondary">512GB
+                    SSD storage</button>
+                <button onclick="updateCost('storage-cost', 180)" type="button" class="btn btn-outline-secondary">1TB
+                    SSD storage</button>
+
+                <h4 class="mt-5">Choose your delivery option</h4>
+                <button onclick="updateCost('delivery-cost', 0)" type="button" class="btn btn-outline-secondary">Friday,
+                    Aug 25 FREE prime Delivery</button>
+                <button onclick="updateCost('delivery-cost', 20)" type="button"
+                    class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $<span>20</span></button>
+
+                <h6 class="mt-5">Best Price : $<span id="best-price">1299</span></h6>
+                <hr>
+                <h6>Extra Memory Cost : $<span id="memory-cost">0</span></h6>
+                <hr>
+                <h6>Extra storage Cost : $<span id="storage-cost">0</span></h6>
+                <hr>
+                <h6>Delivery charge: $<span id="delivery-cost">0</span></h6>
+                <hr class="Border-blod">
+
+                <h6>Total Price : $<span id="sub-total-price">1299</span></h6>
+                <hr>
+
+                <p>Add pomo code</p>
+                <input id="promo-code" class="p-1" type="text">
+                <button onclick="promoCode('promo-code')" type="button" class="btn btn-danger">Apply</button>
+            </div>
+            <hr class="Border-blod mt-5">
+            <h2 class="text-center">Total: $<span id="total-price">1299</span></h2>
+        </div>
+    </div>
+
+
+
+    <script src="js/App.js"></script>
+</body>
+
+</html>
